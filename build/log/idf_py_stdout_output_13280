@@ -1,0 +1,404 @@
+[0;32mI (113) esp_image: segment 1: paddr=0002e1dc vaddr=3fc918ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xf (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403848bc
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 24 2024 10:19:24[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (33) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (74) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (85) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1e1b4h (123316) map[0m
+[0;32mI (113) esp_image: segment 1: paddr=0002e1dc vaddr=3fc91800 size=01e3ch (  7740) load[0m
+[0;32mI (115) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=88548h (558408) map[0m
+[0;32mI (206) esp_image: segment 3: paddr=000b8570 vaddr=3fc9363c size=00c6ch (  3180) load[0m
+[0;32mI (207) esp_image: segment 4: paddr=000b91e4 vaddr=40380000 size=11798h ( 71576) load[0m
+[0;32mI (231) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (231) boot: Disabling RNG early entropy source...[0m
+[0;32mI (242) cpu_start: Unicore app[0m
+[0;32mI (251) cpu_start: Pro cpu start user code[0m
+[0;32mI (251) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (251) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     espnow_example[0m
+[0;32mI (260) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Aug 24 2024 10:19:07[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  8dd6d2f3c...[0m
+[0;32mI (276) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (281) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (286) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (291) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (296) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (303) heap_init: At 3FC98380 len 00027C80 (159 KiB): RAM[0m
+[0;32mI (309) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (316) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (323) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (330) spi_flash: detected chip: generic[0m
+[0;32mI (334) spi_flash: flash io: dio[0m
+[0;33mW (338) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (351) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (358) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (365) main_task: Started on CPU0[0m
+[0;32mI (365) main_task: Calling app_main()[0m
+[0;32mI (375) pp: pp rom version: 9387209[0m
+[0;32mI (375) net80211: net80211 rom version: 9387209[0m
+I (385) wifi:wifi driver task: 3fca0a94, prio:23, stack:6656, core=0
+I (385) wifi:wifi firmware version: 3e0076f
+I (385) wifi:wifi certification version: v7.0
+I (395) wifi:config NVS flash: enabled
+I (395) wifi:config nano formating: disabled
+I (395) wifi:Init data frame dynamic rx buffer num: 32
+I (405) wifi:Init static rx mgmt buffer num: 5
+I (405) wifi:Init management short buffer num: 32
+I (415) wifi:Init dynamic tx buffer num: 32
+I (415) wifi:Init static tx FG buffer num: 2
+I (425) wifi:Init static rx buffer size: 1600
+I (425) wifi:Init static rx buffer num: 10
+I (425) wifi:Init dynamic rx buffer num: 32
+[0;32mI (435) wifi_init: rx ba win: 6[0m
+[0;32mI (435) wifi_init: tcpip mbox: 32[0m
+[0;32mI (445) wifi_init: udp mbox: 6[0m
+[0;32mI (445) wifi_init: tcp mbox: 6[0m
+[0;32mI (445) wifi_init: tcp tx win: 5760[0m
+[0;32mI (455) wifi_init: tcp rx win: 5760[0m
+[0;32mI (455) wifi_init: tcp mss: 1440[0m
+[0;32mI (455) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (465) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (465) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+I (515) wifi:mode : sta (f0:f5:bd:fc:00:c8)
+I (515) wifi:enable tsf
+I (515) ESPNOW: espnow [version: 1.0] init
+[0;32mI (515) main_task: Returned from app_main()[0m
+[0;32mI (13005) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (13005) espnow_example: data value data[i] = 17[0m
+[0;32mI (13005) espnow_example: data value data[i] = 89[0m
+[0;32mI (13995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (13995) espnow_example: data value data[i] = 1[0m
+[0;32mI (13995) espnow_example: data value data[i] = 58[0m
+[0;32mI (14995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (14995) espnow_example: data value data[i] = 17[0m
+[0;32mI (14995) espnow_example: data value data[i] = 47[0m
+[0;32mI (15995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (15995) espnow_example: data value data[i] = 11[0m
+[0;32mI (15995) espnow_example: data value data[i] = 85[0m
+[0;32mI (16995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (16995) espnow_example: data value data[i] = 30[0m
+[0;32mI (16995) espnow_example: data value data[i] = 69[0m
+[0;32mI (17995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (17995) espnow_example: data value data[i] = 42[0m
+[0;32mI (17995) espnow_example: data value data[i] = 73[0m
+[0;32mI (18995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (18995) espnow_example: data value data[i] = 14[0m
+[0;32mI (18995) espnow_example: data value data[i] = 65[0m
+[0;32mI (19995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (19995) espnow_example: data value data[i] = 16[0m
+[0;32mI (19995) espnow_example: data value data[i] = 80[0m
+[0;32mI (20995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (20995) espnow_example: data value data[i] = 1[0m
+[0;32mI (20995) espnow_example: data value data[i] = 78[0m
+[0;32mI (21995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (21995) espnow_example: data value data[i] = 0[0m
+[0;32mI (21995) espnow_example: data value data[i] = 65[0m
+[0;32mI (22995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (22995) espnow_example: data value data[i] = 0[0m
+[0;32mI (22995) espnow_example: data value data[i] = 66[0m
+[0;32mI (23995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (23995) espnow_example: data value data[i] = 0[0m
+[0;32mI (23995) espnow_example: data value data[i] = 58[0m
+[0;32mI (24995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (24995) espnow_example: data value data[i] = 17[0m
+[0;32mI (24995) espnow_example: data value data[i] = 58[0m
+[0;32mI (25995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (25995) espnow_example: data value data[i] = 255[0m
+[0;32mI (25995) espnow_example: data value data[i] = 91[0m
+[0;32mI (26995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (26995) espnow_example: data value data[i] = 32[0m
+[0;32mI (26995) espnow_example: data value data[i] = 55[0m
+[0;32mI (27995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (27995) espnow_example: data value data[i] = 41[0m
+[0;32mI (27995) espnow_example: data value data[i] = 0[0m
+[0;32mI (28995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (28995) espnow_example: data value data[i] = 25[0m
+[0;32mI (28995) espnow_example: data value data[i] = 82[0m
+[0;32mI (29995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (29995) espnow_example: data value data[i] = 32[0m
+[0;32mI (29995) espnow_example: data value data[i] = 87[0m
+[0;32mI (30995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (30995) espnow_example: data value data[i] = 22[0m
+[0;32mI (30995) espnow_example: data value data[i] = 71[0m
+[0;32mI (31995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (31995) espnow_example: data value data[i] = 26[0m
+[0;32mI (31995) espnow_example: data value data[i] = 83[0m
+[0;32mI (32995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (32995) espnow_example: data value data[i] = 22[0m
+[0;32mI (32995) espnow_example: data value data[i] = 255[0m
+[0;32mI (33995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (33995) espnow_example: data value data[i] = 82[0m
+[0;32mI (33995) espnow_example: data value data[i] = 255[0m
+[0;32mI (34995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (34995) espnow_example: data value data[i] = 0[0m
+[0;32mI (34995) espnow_example: data value data[i] = 18[0m
+[0;32mI (35995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (35995) espnow_example: data value data[i] = 255[0m
+[0;32mI (35995) espnow_example: data value data[i] = 57[0m
+[0;32mI (36995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (36995) espnow_example: data value data[i] = 0[0m
+[0;32mI (36995) espnow_example: data value data[i] = 255[0m
+[0;32mI (37995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (37995) espnow_example: data value data[i] = 15[0m
+[0;32mI (37995) espnow_example: data value data[i] = 81[0m
+[0;32mI (38995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (38995) espnow_example: data value data[i] = 16[0m
+[0;32mI (38995) espnow_example: data value data[i] = 53[0m
+[0;32mI (39995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (39995) espnow_example: data value data[i] = 251[0m
+[0;32mI (39995) espnow_example: data value data[i] = 78[0m
+[0;32mI (40995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (40995) espnow_example: data value data[i] = 2[0m
+[0;32mI (40995) espnow_example: data value data[i] = 67[0m
+[0;32mI (41995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (41995) espnow_example: data value data[i] = 23[0m
+[0;32mI (41995) espnow_example: data value data[i] = 64[0m
+[0;32mI (42995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (42995) espnow_example: data value data[i] = 34[0m
+[0;32mI (42995) espnow_example: data value data[i] = 74[0m
+[0;32mI (43995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (43995) espnow_example: data value data[i] = 27[0m
+[0;32mI (43995) espnow_example: data value data[i] = 77[0m
+[0;32mI (44995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (44995) espnow_example: data value data[i] = 15[0m
+[0;32mI (44995) espnow_example: data value data[i] = 64[0m
+[0;32mI (45995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (45995) espnow_example: data value data[i] = 31[0m
+[0;32mI (45995) espnow_example: data value data[i] = 64[0m
+[0;32mI (46995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (46995) espnow_example: data value data[i] = 7[0m
+[0;32mI (46995) espnow_example: data value data[i] = 74[0m
+[0;32mI (47995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (47995) espnow_example: data value data[i] = 16[0m
+[0;32mI (47995) espnow_example: data value data[i] = 52[0m
+[0;32mI (48995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (48995) espnow_example: data value data[i] = 32[0m
+[0;32mI (48995) espnow_example: data value data[i] = 70[0m
+[0;32mI (49995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (49995) espnow_example: data value data[i] = 19[0m
+[0;32mI (49995) espnow_example: data value data[i] = 79[0m
+[0;32mI (50995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (50995) espnow_example: data value data[i] = 0[0m
+[0;32mI (50995) espnow_example: data value data[i] = 74[0m
+[0;32mI (51995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (51995) espnow_example: data value data[i] = 0[0m
+[0;32mI (51995) espnow_example: data value data[i] = 73[0m
+[0;32mI (52995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (52995) espnow_example: data value data[i] = 0[0m
+[0;32mI (52995) espnow_example: data value data[i] = 61[0m
+[0;32mI (53995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (53995) espnow_example: data value data[i] = 27[0m
+[0;32mI (53995) espnow_example: data value data[i] = 66[0m
+[0;32mI (54995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (54995) espnow_example: data value data[i] = 16[0m
+[0;32mI (54995) espnow_example: data value data[i] = 255[0m
+[0;32mI (55995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (55995) espnow_example: data value data[i] = 33[0m
+[0;32mI (55995) espnow_example: data value data[i] = 255[0m
+[0;32mI (56995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (56995) espnow_example: data value data[i] = 34[0m
+[0;32mI (56995) espnow_example: data value data[i] = 70[0m
+[0;32mI (57995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (57995) espnow_example: data value data[i] = 0[0m
+[0;32mI (57995) espnow_example: data value data[i] = 78[0m
+[0;32mI (58995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (58995) espnow_example: data value data[i] = 13[0m
+[0;32mI (58995) espnow_example: data value data[i] = 69[0m
+[0;32mI (59995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (59995) espnow_example: data value data[i] = 25[0m
+[0;32mI (59995) espnow_example: data value data[i] = 57[0m
+[0;32mI (60995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (60995) espnow_example: data value data[i] = 48[0m
+[0;32mI (60995) espnow_example: data value data[i] = 64[0m
+[0;32mI (61995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (61995) espnow_example: data value data[i] = 39[0m
+[0;32mI (61995) espnow_example: data value data[i] = 74[0m
+[0;32mI (62995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (62995) espnow_example: data value data[i] = 42[0m
+[0;32mI (62995) espnow_example: data value data[i] = 90[0m
+[0;32mI (63995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (63995) espnow_example: data value data[i] = 32[0m
+[0;32mI (63995) espnow_example: data value data[i] = 65[0m
+[0;32mI (64995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (64995) espnow_example: data value data[i] = 38[0m
+[0;32mI (64995) espnow_example: data value data[i] = 75[0m
+[0;32mI (65995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (65995) espnow_example: data value data[i] = 11[0m
+[0;32mI (65995) espnow_example: data value data[i] = 48[0m
+[0;32mI (66995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (66995) espnow_example: data value data[i] = 15[0m
+[0;32mI (66995) espnow_example: data value data[i] = 55[0m
+[0;32mI (67995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (67995) espnow_example: data value data[i] = 35[0m
+[0;32mI (67995) espnow_example: data value data[i] = 63[0m
+[0;32mI (68995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (68995) espnow_example: data value data[i] = 29[0m
+[0;32mI (68995) espnow_example: data value data[i] = 80[0m
+[0;32mI (69995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (69995) espnow_example: data value data[i] = 75[0m
+[0;32mI (69995) espnow_example: data value data[i] = 65[0m
+[0;32mI (70995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (70995) espnow_example: data value data[i] = 0[0m
+[0;32mI (70995) espnow_example: data value data[i] = 53[0m
+[0;32mI (71995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (71995) espnow_example: data value data[i] = 206[0m
+[0;32mI (71995) espnow_example: data value data[i] = 61[0m
+[0;32mI (72995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (72995) espnow_example: data value data[i] = 53[0m
+[0;32mI (72995) espnow_example: data value data[i] = 85[0m
+[0;32mI (73995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (73995) espnow_example: data value data[i] = 98[0m
+[0;32mI (73995) espnow_example: data value data[i] = 94[0m
+[0;32mI (74995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (74995) espnow_example: data value data[i] = 128[0m
+[0;32mI (74995) espnow_example: data value data[i] = 80[0m
+[0;32mI (75995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (75995) espnow_example: data value data[i] = 96[0m
+[0;32mI (75995) espnow_example: data value data[i] = 52[0m
+[0;32mI (76995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (76995) espnow_example: data value data[i] = 78[0m
+[0;32mI (76995) espnow_example: data value data[i] = 50[0m
+[0;32mI (77995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (77995) espnow_example: data value data[i] = 177[0m
+[0;32mI (77995) espnow_example: data value data[i] = 71[0m
+[0;32mI (78995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (78995) espnow_example: data value data[i] = 138[0m
+[0;32mI (78995) espnow_example: data value data[i] = 69[0m
+[0;32mI (79995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (79995) espnow_example: data value data[i] = 0[0m
+[0;32mI (79995) espnow_example: data value data[i] = 63[0m
+[0;32mI (80995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (80995) espnow_example: data value data[i] = 112[0m
+[0;32mI (80995) espnow_example: data value data[i] = 81[0m
+[0;32mI (81995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (81995) espnow_example: data value data[i] = 59[0m
+[0;32mI (81995) espnow_example: data value data[i] = 75[0m
+[0;32mI (82995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (82995) espnow_example: data value data[i] = 0[0m
+[0;32mI (82995) espnow_example: data value data[i] = 79[0m
+[0;32mI (83995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (83995) espnow_example: data value data[i] = 80[0m
+[0;32mI (83995) espnow_example: data value data[i] = 76[0m
+[0;32mI (84995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (84995) espnow_example: data value data[i] = 115[0m
+[0;32mI (84995) espnow_example: data value data[i] = 77[0m
+[0;32mI (85995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (85995) espnow_example: data value data[i] = 40[0m
+[0;32mI (85995) espnow_example: data value data[i] = 87[0m
+[0;32mI (86995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (86995) espnow_example: data value data[i] = 0[0m
+[0;32mI (86995) espnow_example: data value data[i] = 86[0m
+[0;32mI (87995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (87995) espnow_example: data value data[i] = 0[0m
+[0;32mI (87995) espnow_example: data value data[i] = 53[0m
+[0;32mI (88995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (88995) espnow_example: data value data[i] = 55[0m
+[0;32mI (88995) espnow_example: data value data[i] = 65[0m
+[0;32mI (89995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (89995) espnow_example: data value data[i] = 210[0m
+[0;32mI (89995) espnow_example: data value data[i] = 62[0m
+[0;32mI (90995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (90995) espnow_example: data value data[i] = 127[0m
+[0;32mI (90995) espnow_example: data value data[i] = 59[0m
+[0;32mI (91995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (91995) espnow_example: data value data[i] = 80[0m
+[0;32mI (91995) espnow_example: data value data[i] = 71[0m
+[0;32mI (92995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (92995) espnow_example: data value data[i] = 0[0m
+[0;32mI (92995) espnow_example: data value data[i] = 65[0m
+[0;32mI (93995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (93995) espnow_example: data value data[i] = 59[0m
+[0;32mI (93995) espnow_example: data value data[i] = 85[0m
+[0;32mI (94995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (94995) espnow_example: data value data[i] = 150[0m
+[0;32mI (94995) espnow_example: data value data[i] = 82[0m
+[0;32mI (95995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (95995) espnow_example: data value data[i] = 119[0m
+[0;32mI (95995) espnow_example: data value data[i] = 80[0m
+[0;32mI (96995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (96995) espnow_example: data value data[i] = 70[0m
+[0;32mI (96995) espnow_example: data value data[i] = 75[0m
+[0;32mI (97995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (97995) espnow_example: data value data[i] = 0[0m
+[0;32mI (97995) espnow_example: data value data[i] = 80[0m
+[0;32mI (98995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (98995) espnow_example: data value data[i] = 115[0m
+[0;32mI (98995) espnow_example: data value data[i] = 62[0m
+[0;32mI (99995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (99995) espnow_example: data value data[i] = 122[0m
+[0;32mI (99995) espnow_example: data value data[i] = 69[0m
+[0;32mI (100995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (100995) espnow_example: data value data[i] = 227[0m
+[0;32mI (100995) espnow_example: data value data[i] = 49[0m
+[0;32mI (101995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (101995) espnow_example: data value data[i] = 0[0m
+[0;32mI (101995) espnow_example: data value data[i] = 59[0m
+[0;32mI (102995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (102995) espnow_example: data value data[i] = 0[0m
+[0;32mI (102995) espnow_example: data value data[i] = 80[0m
+[0;32mI (103995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (103995) espnow_example: data value data[i] = 139[0m
+[0;32mI (103995) espnow_example: data value data[i] = 48[0m
+[0;32mI (104995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (104995) espnow_example: data value data[i] = 64[0m
+[0;32mI (104995) espnow_example: data value data[i] = 61[0m
+[0;32mI (105995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (105995) espnow_example: data value data[i] = 208[0m
+[0;32mI (105995) espnow_example: data value data[i] = 80[0m
+[0;32mI (106995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (106995) espnow_example: data value data[i] = 0[0m
+[0;32mI (106995) espnow_example: data value data[i] = 59[0m
+[0;32mI (107995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (107995) espnow_example: data value data[i] = 0[0m
+[0;32mI (107995) espnow_example: data value data[i] = 61[0m
+[0;32mI (108995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (108995) espnow_example: data value data[i] = 171[0m
+[0;32mI (108995) espnow_example: data value data[i] = 64[0m
+[0;32mI (109995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (109995) espnow_example: data value data[i] = 209[0m
+[0;32mI (109995) espnow_example: data value data[i] = 69[0m
+[0;32mI (110995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (110995) espnow_example: data value data[i] = 37[0m
+[0;32mI (110995) espnow_example: data value data[i] = 70[0m
+[0;32mI (111995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (111995) espnow_example: data value data[i] = 0[0m
+[0;32mI (111995) espnow_example: data value data[i] = 80[0m
+[0;32mI (112995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (112995) espnow_example: data value data[i] = 231[0m
+[0;32mI (112995) espnow_example: data value data[i] = 76[0m
+[0;32mI (113995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (113995) espnow_example: data value data[i] = 45[0m
+[0;32mI (113995) espnow_example: data value data[i] = 91[0m
+[0;32mI (114995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (114995) espnow_example: data value data[i] = 207[0m
+[0;32mI (114995) espnow_example: data value data[i] = 64[0m
+[0;32mI (115995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (115995) espnow_example: data value data[i] = 16[0m
+[0;32mI (115995) espnow_example: data value data[i] = 61[0m
+[0;32mI (116995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (116995) espnow_example: data value data[i] = 208[0m
+[0;32mI (116995) espnow_example: data value data[i] = 61[0m
+[0;32mI (117995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (117995) espnow_example: data value data[i] = 143[0m
+[0;32mI (117995) espnow_example: data value data[i] = 69[0m
+[0;32mI (118995) espnow_example: Receive data from: e4:65:b8:11:7f:9c[0m
+[0;32mI (118995) espnow_example: data value data[i] = 26[0m
+[0;32mI (118995) espnow_example: data value data[i] = 50[0m

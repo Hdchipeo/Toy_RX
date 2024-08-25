@@ -1,0 +1,24 @@
+fatal: detected dubious ownership in repository at 'D:/ESP32/Espressif/frameworks/esp-idf-v5.2.2'
+'D:/ESP32/Espressif/frameworks/esp-idf-v5.2.2' is owned by:
+	BUILTIN/Administrators (S-1-5-32-544)
+but the current user is:
+	DESKTOP-HBFQI9P/trungmuoi301 (S-1-5-21-1878765107-681339552-592396935-1001)
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory D:/ESP32/Espressif/frameworks/esp-idf-v5.2.2
+fatal: detected dubious ownership in repository at 'D:/ESP32/Espressif/frameworks/esp-idf-v5.2.2'
+'D:/ESP32/Espressif/frameworks/esp-idf-v5.2.2' is owned by:
+	BUILTIN/Administrators (S-1-5-32-544)
+but the current user is:
+	DESKTOP-HBFQI9P/trungmuoi301 (S-1-5-21-1878765107-681339552-592396935-1001)
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory D:/ESP32/Espressif/frameworks/esp-idf-v5.2.2
+fatal: detected dubious ownership in repository at 'D:/ESP32/Espressif/frameworks/esp-idf-v5.2.2/components/openthread/openthread'
+'D:/ESP32/Espressif/frameworks/esp-idf-v5.2.2/components/openthread/openthread/.git' is owned by:
+	BUILTIN/Administrators (S-1-5-32-544)
+but the current user is:
+	DESKTOP-HBFQI9P/trungmuoi301 (S-1-5-21-1878765107-681339552-592396935-1001)
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory D:/ESP32/Espressif/frameworks/esp-idf-v5.2.2/components/openthread/openthread

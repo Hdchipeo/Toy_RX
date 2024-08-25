@@ -1,0 +1,417 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403848bc
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 24 2024 10:19:24[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (33) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (74) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (85) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1e41ch (123932) map[0m
+[0;32mI (113) esp_image: segment 1: paddr=0002e444 vaddr=3fc91800 size=01bd4h (  7124) load[0m
+[0;32mI (115) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=893d8h (562136) map[0m
+[0;32mI (207) esp_image: segment 3: paddr=000b9400 vaddr=3fc933d4 size=00ef4h (  3828) load[0m
+[0;32mI (208) esp_image: segment 4: paddr=000ba2fc vaddr=40380000 size=11798h ( 71576) load[0m
+[0;32mI (231) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (232) boot: Disabling RNG early entropy source...[0m
+[0;32mI (243) cpu_start: Unicore app[0m
+[0;32mI (252) cpu_start: Pro cpu start user code[0m
+[0;32mI (252) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (252) cpu_start: Application information:[0m
+[0;32mI (255) cpu_start: Project name:     espnow_example[0m
+[0;32mI (260) cpu_start: App version:      1[0m
+[0;32mI (265) cpu_start: Compile time:     Aug 24 2024 10:19:07[0m
+[0;32mI (271) cpu_start: ELF file SHA256:  8720c20a7...[0m
+[0;32mI (276) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (282) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (287) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (292) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (296) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (304) heap_init: At 3FC983A0 len 00027C60 (159 KiB): RAM[0m
+[0;32mI (310) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (317) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (324) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (331) spi_flash: detected chip: generic[0m
+[0;32mI (335) spi_flash: flash io: dio[0m
+[0;33mW (339) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (352) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (358) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (366) main_task: Started on CPU0[0m
+[0;32mI (366) main_task: Calling app_main()[0m
+[0;32mI (376) pp: pp rom version: 9387209[0m
+[0;32mI (376) net80211: net80211 rom version: 9387209[0m
+I (386) wifi:wifi driver task: 3fca0ab4, prio:23, stack:6656, core=0
+I (386) wifi:wifi firmware version: 3e0076f
+I (386) wifi:wifi certification version: v7.0
+I (396) wifi:config NVS flash: enabled
+I (396) wifi:config nano formating: disabled
+I (396) wifi:Init data frame dynamic rx buffer num: 32
+I (406) wifi:Init static rx mgmt buffer num: 5
+I (406) wifi:Init management short buffer num: 32
+I (416) wifi:Init dynamic tx buffer num: 32
+I (416) wifi:Init static tx FG buffer num: 2
+I (426) wifi:Init static rx buffer size: 1600
+I (426) wifi:Init static rx buffer num: 10
+I (426) wifi:Init dynamic rx buffer num: 32
+[0;32mI (436) wifi_init: rx ba win: 6[0m
+[0;32mI (436) wifi_init: tcpip mbox: 32[0m
+[0;32mI (446) wifi_init: udp mbox: 6[0m
+[0;32mI (446) wifi_init: tcp mbox: 6[0m
+[0;32mI (446) wifi_init: tcp tx win: 5760[0m
+[0;32mI (456) wifi_init: tcp rx win: 5760[0m
+[0;32mI (456) wifi_init: tcp mss: 1440[0m
+[0;32mI (456) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (466) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (466) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+I (516) wifi:mode : sta (f0:f5:bd:fc:00:c8)
+I (516) wifi:enable tsf
+I (516) ESPNOW: espnow [version: 1.0] init
+[0;32mI (516) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (526) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (536) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (546) gpio: GPIO[3]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (556) main_task: Returned from app_main()[0m
+[0;32mI (586) espnow_example: data value data y = 0[0m
+[0;32mI (686) espnow_example: data value data y = 0[0m
+[0;32mI (796) espnow_example: data value data y = 0[0m
+[0;32mI (886) espnow_example: data value data y = 0[0m
+[0;32mI (986) espnow_example: data value data y = 0[0m
+[0;32mI (1086) espnow_example: data value data y = 0[0m
+[0;32mI (1186) espnow_example: data value data y = 0[0m
+[0;32mI (1286) espnow_example: data value data y = 0[0m
+[0;32mI (1386) espnow_example: data value data y = 0[0m
+[0;32mI (1486) espnow_example: data value data y = 0[0m
+[0;32mI (1586) espnow_example: data value data y = 0[0m
+[0;32mI (1686) espnow_example: data value data y = 0[0m
+[0;32mI (1786) espnow_example: data value data y = 0[0m
+[0;32mI (1886) espnow_example: data value data y = 0[0m
+[0;32mI (1986) espnow_example: data value data y = 0[0m
+[0;32mI (2086) espnow_example: data value data y = 0[0m
+[0;32mI (2186) espnow_example: data value data y = 0[0m
+[0;32mI (2286) espnow_example: data value data y = 0[0m
+[0;32mI (2386) espnow_example: data value data y = 0[0m
+[0;32mI (2486) espnow_example: data value data y = 0[0m
+[0;32mI (2586) espnow_example: data value data y = 0[0m
+[0;32mI (2686) espnow_example: data value data y = 0[0m
+[0;32mI (2786) espnow_example: data value data y = 0[0m
+[0;32mI (2886) espnow_example: data value data y = 0[0m
+[0;32mI (2986) espnow_example: data value data y = 0[0m
+[0;32mI (3086) espnow_example: data value data y = 0[0m
+[0;32mI (3186) espnow_example: data value data y = 0[0m
+[0;32mI (3286) espnow_example: data value data y = 0[0m
+[0;32mI (3386) espnow_example: data value data y = 0[0m
+[0;32mI (3486) espnow_example: data value data y = 0[0m
+[0;32mI (3586) espnow_example: data value data y = 0[0m
+[0;32mI (3686) espnow_example: data value data y = 0[0m
+[0;32mI (3786) espnow_example: data value data y = 0[0m
+[0;32mI (3886) espnow_example: data value data y = 0[0m
+[0;32mI (3986) espnow_example: data value data y = 0[0m
+[0;32mI (4086) espnow_example: data value data y = 0[0m
+[0;32mI (4186) espnow_example: data value data y = 0[0m
+[0;32mI (4286) espnow_example: data value data y = 0[0m
+[0;32mI (4386) espnow_example: data value data y = 0[0m
+[0;32mI (4486) espnow_example: data value data y = 0[0m
+[0;32mI (4586) espnow_example: data value data y = 0[0m
+[0;32mI (4686) espnow_example: data value data y = 0[0m
+[0;32mI (4786) espnow_example: data value data y = 0[0m
+[0;32mI (4886) espnow_example: data value data y = 0[0m
+[0;32mI (4986) espnow_example: data value data y = 0[0m
+[0;32mI (5086) espnow_example: data value data y = 0[0m
+[0;32mI (5186) espnow_example: data value data y = 0[0m
+[0;32mI (5286) espnow_example: data value data y = 0[0m
+[0;32mI (5386) espnow_example: data value data y = 0[0m
+[0;32mI (5486) espnow_example: data value data y = 0[0m
+[0;32mI (5586) espnow_example: data value data y = 0[0m
+[0;32mI (5686) espnow_example: data value data y = 0[0m
+[0;32mI (5786) espnow_example: data value data y = 0[0m
+[0;32mI (5886) espnow_example: data value data y = 0[0m
+[0;32mI (5986) espnow_example: data value data y = 0[0m
+[0;32mI (6086) espnow_example: data value data y = 0[0m
+[0;32mI (6186) espnow_example: data value data y = 0[0m
+[0;32mI (6286) espnow_example: data value data y = 0[0m
+[0;32mI (6386) espnow_example: data value data y = 0[0m
+[0;32mI (6486) espnow_example: data value data y = 0[0m
+[0;32mI (6586) espnow_example: data value data y = 0[0m
+[0;32mI (6686) espnow_example: data value data y = 0[0m
+[0;32mI (6786) espnow_example: data value data y = 0[0m
+[0;32mI (6886) espnow_example: data value data y = 0[0m
+[0;32mI (6986) espnow_example: data value data y = 0[0m
+[0;32mI (7086) espnow_example: data value data y = 0[0m
+[0;32mI (7186) espnow_example: data value data y = 0[0m
+[0;32mI (7286) espnow_example: data value data y = 0[0m
+[0;32mI (7386) espnow_example: data value data y = 0[0m
+[0;32mI (7486) espnow_example: data value data y = 0[0m
+[0;32mI (7586) espnow_example: data value data y = 0[0m
+[0;32mI (7686) espnow_example: data value data y = 0[0m
+[0;32mI (7786) espnow_example: data value data y = 0[0m
+[0;32mI (7886) espnow_example: data value data y = 0[0m
+[0;32mI (7986) espnow_example: data value data y = 0[0m
+[0;32mI (8086) espnow_example: data value data y = 0[0m
+[0;32mI (8186) espnow_example: data value data y = 0[0m
+[0;32mI (8286) espnow_example: data value data y = 0[0m
+[0;32mI (8386) espnow_example: data value data y = 0[0m
+[0;32mI (8486) espnow_example: data value data y = 0[0m
+[0;32mI (8586) espnow_example: data value data y = 0[0m
+[0;32mI (8686) espnow_example: data value data y = 0[0m
+[0;32mI (8786) espnow_example: data value data y = 0[0m
+[0;32mI (8886) espnow_example: data value data y = 0[0m
+[0;32mI (8986) espnow_example: data value data y = 0[0m
+[0;32mI (9086) espnow_example: data value data y = 0[0m
+[0;32mI (9186) espnow_example: data value data y = 0[0m
+[0;32mI (9296) espnow_example: data value data y = 0[0m
+[0;32mI (9396) espnow_example: data value data y = 0[0m
+[0;32mI (9486) espnow_example: data value data y = 0[0m
+[0;32mI (9586) espnow_example: data value data y = 0[0m
+[0;32mI (9686) espnow_example: data value data y = 0[0m
+[0;32mI (9786) espnow_example: data value data y = 0[0m
+[0;32mI (9886) espnow_example: data value data y = 0[0m
+[0;32mI (9986) espnow_example: data value data y = 0[0m
+[0;32mI (10086) espnow_example: data value data y = 0[0m
+[0;32mI (10186) espnow_example: data value data y = 0[0m
+[0;32mI (10286) espnow_example: data value data y = 0[0m
+[0;32mI (10386) espnow_example: data value data y = 0[0m
+[0;32mI (10486) espnow_example: data value data y = 0[0m
+[0;32mI (10586) espnow_example: data value data y = 0[0m
+[0;32mI (10686) espnow_example: data value data y = 0[0m
+[0;32mI (10786) espnow_example: data value data y = 0[0m
+[0;32mI (10886) espnow_example: data value data y = 0[0m
+[0;32mI (10986) espnow_example: data value data y = 0[0m
+[0;32mI (11086) espnow_example: data value data y = 0[0m
+[0;32mI (11186) espnow_example: data value data y = 0[0m
+[0;32mI (11286) espnow_example: data value data y = 0[0m
+[0;32mI (11386) espnow_example: data value data y = 0[0m
+[0;32mI (11486) espnow_example: data value data y = 0[0m
+[0;32mI (11586) espnow_example: data value data y = 0[0m
+[0;32mI (11686) espnow_example: data value data y = 0[0m
+[0;32mI (11786) espnow_example: data value data y = 0[0m
+[0;32mI (11886) espnow_example: data value data y = 0[0m
+[0;32mI (11986) espnow_example: data value data y = 0[0m
+[0;32mI (12086) espnow_example: data value data y = 0[0m
+[0;32mI (12186) espnow_example: data value data y = 0[0m
+[0;32mI (12286) espnow_example: data value data y = 0[0m
+[0;32mI (12386) espnow_example: data value data y = 0[0m
+[0;32mI (12486) espnow_example: data value data y = 0[0m
+[0;32mI (12586) espnow_example: data value data y = 0[0m
+[0;32mI (12686) espnow_example: data value data y = 0[0m
+[0;32mI (12786) espnow_example: data value data y = 0[0m
+[0;32mI (12886) espnow_example: data value data y = 0[0m
+[0;32mI (12986) espnow_example: data value data y = 0[0m
+[0;32mI (13086) espnow_example: data value data y = 0[0m
+[0;32mI (13186) espnow_example: data value data y = 0[0m
+[0;32mI (13286) espnow_example: data value data y = 0[0m
+[0;32mI (13386) espnow_example: data value data y = 0[0m
+[0;32mI (13496) espnow_example: data value data y = 0[0m
+[0;32mI (13596) espnow_example: data value data y = 0[0m
+[0;32mI (13686) espnow_example: data value data y = 0[0m
+[0;32mI (13786) espnow_example: data value data y = 0[0m
+[0;32mI (13886) espnow_example: data value data y = 0[0m
+[0;32mI (13986) espnow_example: data value data y = 0[0m
+[0;32mI (14086) espnow_example: data value data y = 0[0m
+[0;32mI (14186) espnow_example: data value data y = 0[0m
+[0;32mI (14286) espnow_example: data value data y = 0[0m
+[0;32mI (14386) espnow_example: data value data y = 0[0m
+[0;32mI (14486) espnow_example: data value data y = 0[0m
+[0;32mI (14586) espnow_example: data value data y = 0[0m
+[0;32mI (14686) espnow_example: data value data y = 0[0m
+[0;32mI (14786) espnow_example: data value data y = 0[0m
+[0;32mI (14886) espnow_example: data value data y = 0[0m
+[0;32mI (14996) espnow_example: data value data y = 0[0m
+[0;32mI (15086) espnow_example: data value data y = 0[0m
+[0;32mI (15186) espnow_example: data value data y = 0[0m
+[0;32mI (15286) espnow_example: data value data y = 0[0m
+[0;32mI (15386) espnow_example: data value data y = 0[0m
+[0;32mI (15496) espnow_example: data value data y = 0[0m
+[0;32mI (15696) espnow_example: data value data y = 0[0m
+[0;32mI (15796) espnow_example: data value data y = 0[0m
+[0;32mI (15886) espnow_example: data value data y = 0[0m
+[0;32mI (15986) espnow_example: data value data y = 0[0m
+[0;32mI (16086) espnow_example: data value data y = 0[0m
+[0;32mI (16186) espnow_example: data value data y = 0[0m
+[0;32mI (16286) espnow_example: data value data y = 0[0m
+[0;32mI (16386) espnow_example: data value data y = 0[0m
+[0;32mI (16486) espnow_example: data value data y = 0[0m
+[0;32mI (16586) espnow_example: data value data y = 0[0m
+[0;32mI (16686) espnow_example: data value data y = 0[0m
+[0;32mI (16786) espnow_example: data value data y = 0[0m
+[0;32mI (16886) espnow_example: data value data y = 0[0m
+[0;32mI (16986) espnow_example: data value data y = 0[0m
+[0;32mI (17086) espnow_example: data value data y = 0[0m
+[0;32mI (17186) espnow_example: data value data y = 0[0m
+[0;32mI (17286) espnow_example: data value data y = 0[0m
+[0;32mI (17386) espnow_example: data value data y = 0[0m
+[0;32mI (17486) espnow_example: data value data y = 0[0m
+[0;32mI (17586) espnow_example: data value data y = 0[0m
+[0;32mI (17686) espnow_example: data value data y = 0[0m
+[0;32mI (17786) espnow_example: data value data y = 0[0m
+[0;32mI (17896) espnow_example: data value data y = 0[0m
+[0;32mI (17986) espnow_example: data value data y = 0[0m
+[0;32mI (18086) espnow_example: data value data y = 0[0m
+[0;32mI (18186) espnow_example: data value data y = 0[0m
+[0;32mI (18286) espnow_example: data value data y = 0[0m
+[0;32mI (18386) espnow_example: data value data y = 0[0m
+[0;32mI (18486) espnow_example: data value data y = 0[0m
+[0;32mI (18586) espnow_example: data value data y = 0[0m
+[0;32mI (18686) espnow_example: data value data y = 0[0m
+[0;32mI (18786) espnow_example: data value data y = 0[0m
+[0;32mI (18886) espnow_example: data value data y = 0[0m
+[0;32mI (18986) espnow_example: data value data y = 0[0m
+[0;32mI (19086) espnow_example: data value data y = 0[0m
+[0;32mI (19196) espnow_example: data value data y = 0[0m
+[0;32mI (19286) espnow_example: data value data y = 0[0m
+[0;32mI (19386) espnow_example: data value data y = 0[0m
+[0;32mI (19486) espnow_example: data value data y = 0[0m
+[0;32mI (19606) espnow_example: data value data y = 0[0m
+[0;32mI (19686) espnow_example: data value data y = 0[0m
+[0;32mI (19786) espnow_example: data value data y = 0[0m
+[0;32mI (19886) espnow_example: data value data y = 0[0m
+[0;32mI (19986) espnow_example: data value data y = 0[0m
+[0;32mI (20086) espnow_example: data value data y = 0[0m
+[0;32mI (20186) espnow_example: data value data y = 0[0m
+[0;32mI (20286) espnow_example: data value data y = 0[0m
+[0;32mI (20386) espnow_example: data value data y = 0[0m
+[0;32mI (20486) espnow_example: data value data y = 0[0m
+[0;32mI (20586) espnow_example: data value data y = 0[0m
+[0;32mI (20686) espnow_example: data value data y = 0[0m
+[0;32mI (20786) espnow_example: data value data y = 0[0m
+[0;32mI (20886) espnow_example: data value data y = 0[0m
+[0;32mI (20986) espnow_example: data value data y = 0[0m
+[0;32mI (21086) espnow_example: data value data y = 0[0m
+[0;32mI (21186) espnow_example: data value data y = 0[0m
+[0;32mI (21286) espnow_example: data value data y = 0[0m
+[0;32mI (21386) espnow_example: data value data y = 0[0m
+[0;32mI (21486) espnow_example: data value data y = 0[0m
+[0;32mI (21586) espnow_example: data value data y = 0[0m
+[0;32mI (28886) espnow_example: data value data y = 0[0m
+[0;32mI (28986) espnow_example: data value data y = 0[0m
+[0;32mI (29086) espnow_example: data value data y = 0[0m
+[0;32mI (29186) espnow_example: data value data y = 0[0m
+[0;32mI (29286) espnow_example: data value data y = 0[0m
+[0;32mI (29386) espnow_example: data value data y = 0[0m
+[0;32mI (29486) espnow_example: data value data y = 0[0m
+[0;32mI (29586) espnow_example: data value data y = 0[0m
+[0;32mI (29686) espnow_example: data value data y = 0[0m
+[0;32mI (29796) espnow_example: data value data y = 0[0m
+[0;32mI (29886) espnow_example: data value data y = 0[0m
+[0;32mI (29986) espnow_example: data value data y = 0[0m
+[0;32mI (30086) espnow_example: data value data y = 0[0m
+[0;32mI (30186) espnow_example: data value data y = 0[0m
+[0;32mI (30286) espnow_example: data value data y = 0[0m
+[0;32mI (30386) espnow_example: data value data y = 0[0m
+[0;32mI (30486) espnow_example: data value data y = 0[0m
+[0;32mI (30586) espnow_example: data value data y = 0[0m
+[0;32mI (30686) espnow_example: data value data y = 0[0m
+[0;32mI (30786) espnow_example: data value data y = 0[0m
+[0;32mI (30886) espnow_example: data value data y = 0[0m
+[0;32mI (30986) espnow_example: data value data y = 0[0m
+[0;32mI (31086) espnow_example: data value data y = 0[0m
+[0;32mI (31186) espnow_example: data value data y = 0[0m
+[0;32mI (31286) espnow_example: data value data y = 0[0m
+[0;32mI (31386) espnow_example: data value data y = 0[0m
+[0;32mI (31486) espnow_example: data value data y = 0[0m
+[0;32mI (31586) espnow_example: data value data y = 0[0m
+[0;32mI (31686) espnow_example: data value data y = 0[0m
+[0;32mI (31786) espnow_example: data value data y = 0[0m
+[0;32mI (31886) espnow_example: data value data y = 0[0m
+[0;32mI (31986) espnow_example: data value data y = 0[0m
+[0;32mI (32086) espnow_example: data value data y = 0[0m
+[0;32mI (32186) espnow_example: data value data y = 0[0m
+[0;32mI (32286) espnow_example: data value data y = 0[0m
+[0;32mI (32386) espnow_example: data value data y = 0[0m
+[0;32mI (32486) espnow_example: data value data y = 0[0m
+[0;32mI (32586) espnow_example: data value data y = 0[0m
+[0;32mI (32686) espnow_example: data value data y = 0[0m
+[0;32mI (32786) espnow_example: data value data y = 0[0m
+[0;32mI (32886) espnow_example: data value data y = 0[0m
+[0;32mI (32986) espnow_example: data value data y = 0[0m
+[0;32mI (33086) espnow_example: data value data y = 0[0m
+[0;32mI (33186) espnow_example: data value data y = 0[0m
+[0;32mI (33286) espnow_example: data value data y = 0[0m
+[0;32mI (33386) espnow_example: data value data y = 0[0m
+[0;32mI (33486) espnow_example: data value data y = 0[0m
+[0;32mI (33586) espnow_example: data value data y = 0[0m
+[0;32mI (33686) espnow_example: data value data y = 0[0m
+[0;32mI (33786) espnow_example: data value data y = 0[0m
+[0;32mI (33886) espnow_example: data value data y = 0[0m
+[0;32mI (33986) espnow_example: data value data y = 0[0m
+[0;32mI (34086) espnow_example: data value data y = 0[0m
+[0;32mI (34186) espnow_example: data value data y = 0[0m
+[0;32mI (34286) espnow_example: data value data y = 0[0m
+[0;32mI (34386) espnow_example: data value data y = 0[0m
+[0;32mI (34486) espnow_example: data value data y = 0[0m
+[0;32mI (34586) espnow_example: data value data y = 0[0m
+[0;32mI (34686) espnow_example: data value data y = 0[0m
+[0;32mI (34786) espnow_example: data value data y = 0[0m
+[0;32mI (34886) espnow_example: data value data y = 0[0m
+[0;32mI (34986) espnow_example: data value data y = 0[0m
+[0;32mI (35086) espnow_example: data value data y = 0[0m
+[0;32mI (35186) espnow_example: data value data y = 0[0m
+[0;32mI (35286) espnow_example: data value data y = 0[0m
+[0;32mI (35386) espnow_example: data value data y = 0[0m
+[0;32mI (35486) espnow_example: data value data y = 0[0m
+[0;32mI (35586) espnow_example: data value data y = 0[0m
+[0;32mI (35686) espnow_example: data value data y = 0[0m
+[0;32mI (35786) espnow_example: data value data y = 0[0m
+[0;32mI (35886) espnow_example: data value data y = 0[0m
+[0;32mI (35986) espnow_example: data value data y = 0[0m
+[0;32mI (36086) espnow_example: data value data y = 0[0m
+[0;32mI (36186) espnow_example: data value data y = 0[0m
+[0;32mI (36286) espnow_example: data value data y = 0[0m
+[0;32mI (36386) espnow_example: data value data y = 0[0m
+[0;32mI (36486) espnow_example: data value data y = 0[0m
+[0;32mI (36586) espnow_example: data value data y = 0[0m
+[0;32mI (36686) espnow_example: data value data y = 0[0m
+[0;32mI (36786) espnow_example: data value data y = 0[0m
+[0;32mI (36886) espnow_example: data value data y = 0[0m
+[0;32mI (36986) espnow_example: data value data y = 0[0m
+[0;32mI (37086) espnow_example: data value data y = 0[0m
+[0;32mI (37186) espnow_example: data value data y = 0[0m
+[0;32mI (37286) espnow_example: data value data y = 0[0m
+[0;32mI (37386) espnow_example: data value data y = 0[0m
+[0;32mI (37486) espnow_example: data value data y = 0[0m
+[0;32mI (37586) espnow_example: data value data y = 0[0m
+[0;32mI (37686) espnow_example: data value data y = 0[0m
+[0;32mI (37786) espnow_example: data value data y = 0[0m
+[0;32mI (37886) espnow_example: data value data y = 0[0m
+[0;32mI (37986) espnow_example: data value data y = 0[0m
+[0;32mI (38086) espnow_example: data value data y = 0[0m
+[0;32mI (38186) espnow_example: data value data y = 0[0m
+[0;32mI (38286) espnow_example: data value data y = 0[0m
+[0;32mI (38386) espnow_example: data value data y = 0[0m
+[0;32mI (38486) espnow_example: data value data y = 0[0m
+[0;32mI (38586) espnow_example: data value data y = 0[0m
+[0;32mI (38686) espnow_example: data value data y = 0[0m
+[0;32mI (38786) espnow_example: data value data y = 0[0m
+[0;32mI (38886) espnow_example: data value data y = 0[0m
+[0;32mI (38986) espnow_example: data value data y = 0[0m
+[0;32mI (39086) espnow_example: data value data y = 0[0m
+[0;32mI (39186) espnow_example: data value data y = 0[0m
+[0;32mI (39286) espnow_example: data value data y = 0[0m
+[0;32mI (39386) espnow_example: data value data y = 0[0m
+[0;32mI (39486) espnow_example: data value data y = 0[0m
+[0;32mI (39586) espnow_example: data value data y = 0[0m
+[0;32mI (39686) espnow_example: data value data y = 0[0m
+[0;32mI (39786) espnow_example: data value data y = 0[0m
+[0;32mI (39886) espnow_example: data value data y = 0[0m
+[0;32mI (39986) espnow_example: data value data y = 0[0m
+[0;32mI (40086) espnow_example: data value data y = 0[0m
+[0;32mI (40186) espnow_example: data value data y = 0[0m
+[0;32mI (40286) espnow_example: data value data y = 0[0m
+[0;32mI (40386) espnow_example: data value data y = 0[0m
+[0;32mI (40486) espnow_example: data value data y = 0[0m
+[0;32mI (40586) espnow_example: data value data y = 0[0m
+[0;32mI (40686) espnow_example: data value data y = 0[0m
+[0;32mI (40786) espnow_example: data value data y = 0[0m
